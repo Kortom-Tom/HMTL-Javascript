@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rekenen</title>
 </head>
 <body>
     <script>
         var vraag = 'Vul een getal in?';
         var operatorvraag = 'Vul operator in';
         var input = parseInt(prompt(vraag));
-        var operator = prompt(operatorvraag));
+        var operator = prompt(operatorvraag,"plus, min, keer, delen");
         var input2 = parseInt(prompt(vraag));
+        if (operator = "min"){
+            var antwoord = input - input2
+        }
+        if (operator ="keer"){
+            var antwoord = input * input2
+        }
+        if (operator ="delen"){
+            var antwoord = input / input2
+        }
+        if (operator ="plus"){
+            var antwoord = input + input2
+        }
         
-
-        var antwoord = string(input) + string(operator) + string(input2);
-        console.log(string(antwoord));
+        document.write(antwoord)
     </script>
 </body>
 </html>
