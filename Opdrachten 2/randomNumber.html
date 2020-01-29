@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Voorwaardelijke operator</title>
+    <title>random</title>
 </head>
 <body>
     <p id="antwoord"></p>
     <script>
         var fout = '<h2> Jammer, volgende keer beter !</h2>'; 
         var goed = '<h2> Prima, ga zo door! </h2>'; 
-        var vraag = 'Hoeveel is 20 + 60 ?'; 
-        var antwoord = 80;
+        var vraag = 'kies een nummer onder de 10'; 
+        var randomnummer = Math.round(Math.random() * 10);
             var input = parseInt(prompt(vraag));
-            if (input == antwoord) {
+            if (input == randomnummer) {
                 document.getElementById("antwoord").innerHTML = goed;
             }
             else {
