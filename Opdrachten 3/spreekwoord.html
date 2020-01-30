@@ -11,8 +11,16 @@
         var datum = new Date();
         var dag = datum.getDay();
         var weekdagen = ["zondag" ,"maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"];
+        var spreekwoorden = ["Eigen haard is goud waard " 
+        ,"Haastige spoed is zelden goed "
+        , "Beter laat dan nooit"
+        , "Wie het laatst lacht, lacht het best "
+        , "De morgenstond heeft goud in de mond "
+        , "Zoals het klokje thuis tikt, tikt het nergens"
+        , "Oost west, thuis best "];
         var output = weekdagen[dag];
-        document.write(output);
+        var spreekwoord = spreekwoorden[dag];
+        document.write("Het is vandaag: " + output + "<br>" + "Het spreekwoord van de dag is: " + spreekwoord);
     </script>
 </body>
 </html>
