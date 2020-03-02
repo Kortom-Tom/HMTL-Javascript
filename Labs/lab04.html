@@ -10,10 +10,20 @@
     <script>
         
         var palet = new Array('Blauw','Geel','Rood','Zwart','Wit');
+        //document.write(palet);
         var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
-        palet.push(palet);
-        document.write('check: '+ palet);
-        
+        palet.push(nieuwekleur);
+        //document.write(palet);
+        var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
+        palet.unshift(nieuwekleur);
+        //document.write(palet);
+        palet.sort();
+        let length = palet.length();
+        var palet2 = palet.slice(0,4);
+        document.write(palet);
+        document.write(palet2);
+        var palet3 = palet.slice();
+
     </script>
 </body>
 </html>

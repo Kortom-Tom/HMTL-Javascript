@@ -14,9 +14,17 @@
         document.write("<br> 4 Datetype : " + typeof testarray[4]);
         testarray.splice(4,1);
         document.write("<br> 6: " + testarray);
-        testarray
-
-
+        testarray.unshift('nul')
+        document.write('<br> 8: '+ testarray);
+        testarray.pop(1);
+        document.write("<br> 10: " + typeof testarray[0])
+        testarray.splice(0,1)
+        document.write("<br> 12: " + testarray)
+        testarray.splice(1,1)
+        document.write("<br> 14: " + testarray)
+        testarray.splice(1,1)
+        document.write("<br> 16: " + testarray)
+        
     </script>
 </body>
 </html>

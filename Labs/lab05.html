@@ -7,8 +7,12 @@
 </head>
 <body>
     <script>
-        einddatum = prompt("Wat is de einddatum JJJJ-MM-DD")
-        
+        var einddatum = prompt("Wat is de einddatum JJJJ-MM-DD")
+        var Currentdate = new Date();
+        var getal = ((Date.parse(einddatum)-Currentdate));
+        var seconds = (getal / 1000).toFixed(0);
+        var days = seconds / 86400;
+        document.write("<br> Amount of days till deadline: " + days.toFixed(0));
     </script>
 </body>
 </html>
