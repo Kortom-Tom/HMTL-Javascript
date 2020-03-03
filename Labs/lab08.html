@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var vandaag = new Date()
+        
+
+        document.write("<br>Vandaag is: " + vandaag.toDateString());
+        var factuur = new Date(2016,9,11);
+        document.write("<br>Factuur datum is: " + factuur.toDateString());
+        var dag = 86400000;
+        var termijn = new Date(dag * 30);
+
+        var betaaltijd = (factuur.getTime() + termijn.getTime());
+        var betaaldatum = new Date(betaaltijd);
+        document.write("<br> betaaldatum is:"+ betaaldatum.toDateString());
+        if (vandaag > betaaldatum){
+            document.write("<br> Meld Incassobureau")
+
+        } 
+        else {
+            document.write("<br>U hebt nog: " + ((betaaldatum.getDay() - vandaag.getDay())/ dag) + " dagen om te betalen");
+        }
+        
+
+    </script>
+</body>
+</html>
