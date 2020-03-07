@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="mijn-functions.js"></script>
+</head>
+<body>
+    <form>
+        
+        <label for="conversie">Choose a currency:</label>
+        <select id="conversie" name="conversie">
+        <option value="euro/dollar">euro/dollar</option>
+        <option value="dollar/euro">dollar/euro</option>
+        <option value="euro/rubels">euro/rubels</option>
+        <option value="rubels/euro">rubels/euro</option>
+
+    </form>
+    <form>
+
+        <input type="text" name="bedrag" id="bedrag">
+    </form>
+        <button onclick="document.write(exchange());">Submit</button>
+    </form>
+</body>
+</html>

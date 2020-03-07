@@ -11,6 +11,30 @@
         var rol = prompt("Wat is je rol?");
         var inlogcode = prompt("Wat is je inlogcode?");
 
+        switch (rol){
+            case 'admin':
+            if (inlogcode == 'admin'){
+                document.write("<br>Welkom " + rol);
+            
+            }else {
+                document.write("<br>Code ongeldig");
+                
+            }
+            break;
+            case 'student':
+            if (inlogcode == 'student'){
+                document.write("<br>Welkom " + rol);
+            }
+            else {
+                document.write("<br>Code ongeldig");
+               
+            }
+            break;
+            default:
+            document.write('code ongeldig');
+            }
+        
+
     </script>
 </body>
 </html>
