@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        string1 = '1,2,3,5,6,7,8,9,0#'
+        string2 = '1,2,3#'
+        
+        for (i=0;i < 20; i++){
+            if(string1.charAt(i) != '#'){
+                document.write(string1.charAt(i))
+            }
+        }
+        document.write("<br>")
+        for (i=0;i < 20; i++){
+            if(string2.charAt(i) != '#'){
+                document.write(string2.charAt(i))
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var tekst = "Dit is een lange zin die woorden kan vervangen"
+        document.write(tekst)
+        
+        function vervangen(){
+
+            var woord = prompt('Wat is het woord dat je wil vervangen?')
+            var nieuwwoord = prompt("Typ nieuw woord in")
+            var replace = tekst.replace(woord,nieuwwoord)
+            document.write("<br>" + replace)
+            
+        }
+        vervangen()
+        
+    </script>
+</body>
+</html>
